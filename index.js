@@ -53,4 +53,4 @@ const hash = (key, size) => {
   hashTable.remove('darien')
   hashTable.remove('mina')
   
-  
+  // 7:15 https://www.youtube.com/watch?v=QuFPIZj55hU
