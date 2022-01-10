@@ -14,7 +14,7 @@ const hash = (key, size) => {
       this.buckets = Array(this.size) 
   
       // populate each bucket with a Map()
-      for (let i = 0; this.buckets.length; i++) {
+      for (let i = 0; i < this.buckets.length; i++) {
         this.buckets[i] = new Map()
       }
     }
@@ -39,6 +39,7 @@ const hash = (key, size) => {
   
   const hashTable = new HashTable()
   
+
   hashTable.insert('serena', 'moon')
   hashTable.insert('amy', 'mercury')
   hashTable.insert('rei', 'mars')
@@ -54,3 +55,8 @@ const hash = (key, size) => {
   hashTable.remove('mina')
   
   // 7:15 https://www.youtube.com/watch?v=QuFPIZj55hU
+  console.log(hashTable.search('rei'))
+  console.log(hashTable.search('serena'))
+  console.log(hashTable)
+  
+
